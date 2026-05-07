@@ -424,7 +424,7 @@ export default function GeoPage() {
       <div className="flex-1 flex flex-col overflow-hidden">
         {!selectedBranch ? (
           /* Map-like overview */
-          <div className="flex-1 overflow-auto p-6">
+          <div className="flex-1 overflow-auto p-6 max-w-screen-2xl mx-auto w-full">
             <div className="mb-6">
               <h1 className="text-xl font-semibold text-ink">Geographic Analysis</h1>
               <p className="text-sm text-ink-muted mt-1">Pilih cabang dari sidebar untuk analisa lokasi lengkap</p>
@@ -565,7 +565,7 @@ export default function GeoPage() {
               </div>
             </div>
 
-            <div className="p-6">
+            <div className="p-6 max-w-screen-xl mx-auto w-full">
               {analysis?.loading ? (
                 <div className="flex flex-col items-center justify-center py-16">
                   <div className="flex gap-2 mb-3">
